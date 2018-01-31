@@ -1,14 +1,33 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Browser Compatibility</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser Compatibility</title>
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/panel.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/panel.css" />
 
-    </head>
-    <body>
-    </body>
+  <style>
+
+.browsers {
+  display: flex;
+  flex-flow: column;
+}
+
+.info {
+  white-space: pre;
+}
+
+  </style>
+
+</head>
+<body>
+
+<button id="inspect">Check Page</button>
+<div id="info"></div>
+
+<div class="browsers" id="browsers"></div>
+
+</body>
 </html>

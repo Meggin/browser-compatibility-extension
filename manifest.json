@@ -8,6 +8,13 @@
   
   "devtools_page": "devtools.html",
 
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+
   "permissions": [
     "tabs",
     "<all_urls>"
